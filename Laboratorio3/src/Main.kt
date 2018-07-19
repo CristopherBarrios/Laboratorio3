@@ -5,13 +5,15 @@ fun c (lab: ArrayList<labo>) {
 }
 
 fun main(args: Array<String>) {
-    val menu = labo(
-            lista = "lista"
-    )
-    val b: ArrayList<labo> = arrayListOf(
-            menu
-    )
-    c(b)
-    b.forEach { println(it) }
 
+        args.forEach { println(it) }
+        print("Escriba la lista:")
+        val menu = labo(
+                lista = readLine()!!
+        )
+        val b: ArrayList<labo> = arrayListOf(
+                menu
+        )
+        c(b)
+        b.forEach { println(it) }
 }
